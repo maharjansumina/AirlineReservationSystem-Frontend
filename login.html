@@ -20,7 +20,9 @@
 
   <!-- Main Stylesheet File -->
   <link href="airline/css/style.css" rel="stylesheet">
-
+</head>
+<body>
+<header id="header">
     <div class="container-fluid bg-black text-right padding-60">
         <a href="tel:+977-01-5540168">+977-01-5540168</a> | <a href="tel:+977-9843822800">+977-9843822800</a> | <a href="mailto:suminamaharjan098@gmail.com">suminamaharjan098@gmail.com</a>
         </div>
@@ -33,114 +35,54 @@
             <nav id="nav-menu-container">
               <ul class="nav-menu">
                 <li ><a href="index.html">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Login</a></li>
-                <li><a href="">Sign Up</a></li>
-                <li class="menu-active"><a href="">Get Solution</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="where.html">Get Solution</a></li>
                 
               </ul>
             </nav><!-- #nav-menu-container -->
-          </div>
-        </header><!-- #header -->
-        
-</head>
+          </div> 
+        </header> 
 
-<section id="intro">
-    <div class="intro-container">
-      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
-
-        <ol class="carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <div class="carousel-item active">
-            <div class="carousel-background"><img src="airline/img/plane.jpg" alt=""></div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="carousel-background"><img src="airline/img/plane1.jpg" alt=""></div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="carousel-background"><img src="airline/img/plane2.jpg" alt=""></div>
-          </div>
-
+    <section id="call-to-action" class="wow fadeIn">
+        <div class="container text-center">
+        <h1>Login</h1>
         </div>
-
-        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-
-        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-
-      </div>
-    </div>
-  </section><!-- #intro -->
-
-  <section id="featured-services" class="fsblue">
-    <div class="container">
-      <div class="section-header">
-        <h3 class="section-title">About Us</h3>
-      </div>
-      <div class="row">
-        <div class="box">
-          <p class="description" align="center">We are a Digital Solutions Agency dedicated to create and develop the most advanced
-             digital products, specifically for online and social media platforms.  
-            The ultimate goal of the Mango Tech would be to cater you with all the digital channels necessary to keep your target 
-            audiences and brand reputation intact. By implementing the latest digital innovations, with us, 
-            you will be able to lift up your business to the level you have always dreamt of.</p>
-            <a href="aboutus.html" class="btn btn-warning">Read More...</a>
-        </div>
-      </div>
-    </div>
-  </section><!-- #featured-services -->
-
-
-  <section id="contact" class="section-bg wow fadeInUp">
-    <div class="container">
-
-      <div class="section-header">
-        <h3>Contact Us</h3>
-        <p>Leave us your brief details and someone from our team will get in touch with you as soon as possible!</p>
-      </div>
-
-      <div class="row contact-info">
-
-        <div class="col-md-4">
-          <div class="contact-address">
-            <i class="ion-ios-location-outline"></i>
-            <h3>Address</h3>
-            <address>Sundhara,Patan , Nepal</address>
+    </section><!-- #call-to-action -->
+    <br>
+      <div class="container">
+          <div id="login-row" class="row justify-content-center align-items-center">
+              <div id="login-column" class="col-md-6">
+                  <div id="login-box" class="col-md-12">
+                      <form id="login-form" class="form" action="" method="post">
+                          <div class="form-group">
+                              <label class="text-info">Email:</label><br>
+                              <input type="text" name="email" class="form-control">
+                          </div>
+                          <div class="form-group">
+                              <label class="text-info">Password:</label><br>
+                              <input type="text" name="password" class="form-control">
+                          </div>
+                          <div class="form-group">
+                              <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
+                          </div>
+                          <div id="register-link" class="text-right">
+                              <a href="signup.html" class="text-info">Register here</a>
+                          </div>
+                      </form>
+                  </div>
+              </div>
           </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="contact-phone">
-            <i class="ion-ios-telephone-outline"></i>
-            <h3>Phone Number</h3>
-            <p><a href="tel:+977-01-5540168">+977-01-5540168</a> | <a href="tel:+977-9843822800">+977-9843822800</a></p>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="contact-email">
-            <i class="ion-ios-email-outline"></i>
-            <h3>Email</h3>
-            <p><a href="mailto:suminamaharjan098@gmail.com">suminamaharjan098@gmail.com</a></p>
-          </div>
-        </div>
-
       </div>
-      </div>
-      </section>
-<body>
+      <br>
+
+
+</body>  
 
       <!-- JavaScript Libraries -->
   <script src="airline/lib/jquery/jquery.min.js"></script>
+  <script src="airline/lib/bootstrap/js/bootstrap.min.js"></script>
   <script src="airline/lib/jquery/jquery-migrate.min.js"></script>
   <script src="airline/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="airline/lib/easing/easing.min.js"></script>
@@ -161,7 +103,7 @@
 <footer id="footer">
   <div class="container">
     <div class="copyright">
-      &copy; Copyright 2019 <strong>Mango Tech</strong>. All Rights Reserved
+      &copy; Copyright 2019 <strong>Airline Reservation System</strong>. All Rights Reserved
     </div>
     
   </div>
