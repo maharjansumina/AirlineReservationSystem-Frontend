@@ -1,7 +1,43 @@
 window.onload = function() {
     //login
     const url = 'http://localhost:3020/users';
-    
+    const loginsubmit = document.getElementById('loginsubmit');
+	loginsubmit.addEventListener('click', userLogin);
+	
+	async function userLogin(event){
+		const email = document.getElementById('loginemail').value;
+		const password = document.getElementById('loginpassword').value;
+
+		const data = await fetch(url+'/login',{
+			method: "POST",
+			headers:{
+				'Content-Type': 'application/json'
+			},
+			body:JSON.stringify({
+				email: email,
+				password: password
+			})
+		})
+		const json = await data.json();
+		// console.log(json);
+		if(json.status == "Login success!"){
+			
+			// for Giving Current path
+			var href = location.href.split('/');
+			href.pop();
+			href = href.join('/') + '/';
+			console.log(href);
+			
+			// for opening another page
+			window.open(href+"where.html","_self");
+
+			alert("Login Successful.");
+
+
+		}else{
+			alert("Login Failed.");
+		}
+    }
 
 
     //Registration
