@@ -29,7 +29,7 @@ window.onload = function() {
 			console.log(href);
 			
 			// for opening another page
-			window.open(href+"where.html","_self");
+			window.open(href+"userdashboard.html","_self");
 
 			alert("Login Successful.");
 
@@ -38,7 +38,6 @@ window.onload = function() {
 			alert("Login Failed.");
 		}
     }
-
 
     //Registration
     const signsubmit = document.getElementById('signupsubmit');
