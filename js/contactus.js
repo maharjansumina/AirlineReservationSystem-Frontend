@@ -1,6 +1,6 @@
 window.onload = function() {
     //contactus
-    const url = 'http://localhost:3010/users';
+    const url = 'http://localhost:3020/contact';
 
      //Registration
      const csubmit = document.getElementById('csubmit');
@@ -12,7 +12,7 @@ window.onload = function() {
          const cmessage = document.getElementById('cmessage').value;
      
  
-         const data = await fetch(url + '/contact',{
+         const data = await fetch(url + '/',{
              method: "POST",
              headers: {
                  'Content-Type': 'application/json'
@@ -30,5 +30,5 @@ window.onload = function() {
          }else{
              alert("Failed");
          }   
-     }
+        }
 }
